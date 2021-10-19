@@ -10,8 +10,8 @@ import UIKit
 import newPodsLib
 class ViewController: UIViewController {
     
-    private lazy var alertView: CustomAlertView = {
-        let alertView = CustomAlertView()
+    private lazy var alertView: CustomAlert = {
+        let alertView = CustomAlert()
         alertView.cancelButton.isHidden = true
         return alertView
     }()
