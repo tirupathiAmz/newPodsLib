@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import UIKit
 public struct MyClass {
     
-    public static func ShowMessage(){
-        print("I'm here")
+    public static func ShowMessage(controller:UIViewController,title:String,message:String){
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        controller.present(alert, animated: true, completion: nil)
     }
 }
